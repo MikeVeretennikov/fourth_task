@@ -13,8 +13,10 @@ class Example(QMainWindow):
 
     def initUI(self):
         uic.loadUi('main.ui', self)
-        self.connection = sqlite3.connect('coffee.sqlite')
 
+        self.add_edit.clicked.connect(self.addedit)
+
+        self.connection = sqlite3.connect('coffee.sqlite')
         query = 'SELECT * FROM coffee'
         res = self.connection.cursor().execute(query).fetchall()
 
@@ -29,6 +31,12 @@ class Example(QMainWindow):
             for j, elem in enumerate(row):
                 self.table.setItem(
                     i, j, QTableWidgetItem(str(elem)))
+
+
+    def addedit(self):
+        uic.loadUi('addEditCoffeeForm2.ui', self)
+
+
 
 
 
