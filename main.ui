@@ -47,56 +47,6 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QTableWidget" name="table">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>100</y>
-      <width>701</width>
-      <height>521</height>
-     </rect>
-    </property>
-    <column>
-     <property name="text">
-      <string>id</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string notr="true">название сорта</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>степень обжарки</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>молотый/в зернах</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>описание вкуса</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>цена</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>объем упаковки</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string/>
-     </property>
-    </column>
-   </widget>
    <widget class="QPushButton" name="add_edit">
     <property name="geometry">
      <rect>
